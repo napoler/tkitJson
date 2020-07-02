@@ -16,10 +16,6 @@ pip install tkitJson  -i https://pypi.org/simple/
 ### 使用
 
 
-```
-
-pip install tkitJson  -i https://pypi.org/simple/
-```
 
 Json数据存储
 
@@ -50,5 +46,18 @@ print(new_data)
 
 ```
 
+
+```
+#写入配置
+data={"no":111,
+'bb':22
+}
+Config=tkitJson.Config("config.json")
+Config.save(data)
+#读取
+data=Config.read()
+print(data)
+
+```
 
 

@@ -18,15 +18,15 @@ long_description="""
 
 这里是说明
 Json操作库
- 
+http://www.terrychan.org/tkitJson
 """
 setup(
     name='tkitJson',
-    version='0.0.0.1',
+    version='0.0.0.2',
     description='Terry toolkit',
     author='Terry Chan',
     author_email='napoler2008@gmail.com',
-    url='https://terry-toolkit.terrychan.org/zh/master/',
+    url='http://www.terrychan.org/tkitJson',
     # install_requires=read_requirements('requirements.txt'),  # 指定需要安装的依赖
     long_description=long_description,
     long_description_content_type="text/markdown",

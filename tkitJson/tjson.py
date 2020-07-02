@@ -25,7 +25,7 @@ class Json:
     for line in self.auto_load():
       lines.append(line)
     return lines
-    def json_remove_duplicates(self,json_file):
+  def json_remove_duplicates(self,json_file):
         print("尝试移除重复数据")
         origin_json=tkitFile.Json(json_file)
         temp=tkitFile.Json(json_file+".tmp.json")

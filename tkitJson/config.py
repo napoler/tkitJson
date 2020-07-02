@@ -1,23 +1,31 @@
+# -*- coding: utf-8 -*-
 import json
 
 class Config:
-    def save_config(data,file='config.json'):
+    """
+    读写配置文件
+    快速
+    
+    """
+    def __init__(self,file='config.json'):
+        self.file=file
+    def save(self,data):
         """
         数据保存为json文件
         """
-        with open(file, 'w') as outfile:
+        with open( self.file, 'w') as outfile:
             json.dump(data, outfile)
 
-    def read_config(file='config.json'):
+    def read(self):
         """
         读取json文件
         """
-        with open(file) as json_file:
+        with open( self.file) as json_file:
             return json.load(json_file)
 
-    def update_config(file='config.json'):
-        """
-        读取json文件
-        """
-        with open(file) as json_file:
-            return json.load(json_file)
+    # def update(self,data):
+    #     """
+    #     读取json文件
+    #     """
+    #     with open( self.file) as json_file:
+    #         return json.load(json_file)
